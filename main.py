@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from tortoise.contrib.fastapi import register_tortoise
 
 from api.authrouter import auth_router
-from settengs.config import Config
+from settings.config import Config
 
 app = FastAPI()
 app.include_router(auth_router)
